@@ -331,10 +331,58 @@
                     </a>
                 </div>
             </div>
+            <div>
+                <p class="footer-form-hero">підпишіться на розсилку</p>
+                <div class="footer-form-line">
+                    <form class="form-footer-main">
+                        <div class="form-footer">
+                            <label for="footer_email"></label>
+                            <input type="email" name="email" id="footer_email" placeholder="E-mail" />
+                        </div>
+                    </form>
+                    <div class="footer-bt">
+                        <button class="footer-button" type="submit">Підписатися</button>
+                    </div>
+                </div>
+            </div>
        </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <h3 class="form-hero">Залиште свої дані, ми вам передзвонимо</h3>
+            <form class="form-main">
+                <div class="form-field">
+                    <label for="name">Імʼя</label>
+                    <input type="text" name="name" id="name"/>
+                </div>
+                <div class="form-field">
+                    <label for="tel_user">Телефон</label>
+                    <input type="tel" name="phone_number" id="tel_user" />
+                </div>
+                <div class="form-field">
+                    <label for="user_email">Пошта</label>
+                    <input type="email" name="email" id="user_email" />
+                </div>
+                <div class="form-field-comment">
+                    <label for="text-comment">Коментар</label>
+                    <textarea 
+                    name="comment" 
+                    id="text-comment" 
+                    rows="7" 
+                    placeholder="Введіть текст"
+                    ></textarea>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="" value="" id="">
+                    <label for="check">
+                        Погоджуюся з розсилкою та приймаю
+                        <a class="form-terms" href="#">Умови договору</a>
+                    </label>
+                </div>
+                <div class="form-bt">
+                    <button class="form-button" type="submit">Відправити</button>
+                </div>
+            </form>
             <button class="backdrop-but" data-modal-close>x</button>
         </div>
     </div>
