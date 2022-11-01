@@ -252,6 +252,7 @@ img {
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--button-color-portfolio);
+    outline: none;
 }
 .form-footer input::placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -749,12 +750,21 @@ img {
     border-radius: 25px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--title-text-color);
-    align-items: center;   
-    justify-content: center;
-    text-transform: uppercase;
+    /* align-items: center;    */
+    /* justify-content: center; */
+    /* text-transform: uppercase; */
     position: absolute;
     top: 8px;
     right: 8px;
+}
+.backdrop-but svg {
+    position: absolute;
+    top: 5.5px;
+    right: 5.5px;
+}
+.backdrop-but svg:hover {
+    fill: var(--accent-text-color);
+    cursor: pointer;
 }
 .modal {
     position: absolute;
@@ -790,6 +800,15 @@ img {
     letter-spacing: 0.01em;
     text-align: left;
     color: rgba(117, 117, 117, 1);
+    position: relative;
+}
+.form-svg {
+    position: absolute;
+    top: 28px;
+    left: 12px;
+}
+.form-svg:hover {
+    fill: rgba(33, 150, 243, 1);
 }
 .form-field label {
     margin-bottom: 4px;
@@ -800,12 +819,18 @@ img {
     border-radius: 4px;
     border: 1px solid rgba(117, 117, 117, 1);
 }
-.form-field input:hover {
+.form-field input:hover,
+.form-field input:focus
+ {
     cursor: pointer;
-    border: 1px solid rgba(33, 150, 243, 1);
+    border-color: rgba(33, 150, 243, 1);
+    outline: none;
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field:focus-within .form-svg {
+    fill: rgba(33, 150, 243, 1);
 }
 .form-field-comment {
     display: flex;
@@ -818,9 +843,10 @@ img {
     color: rgba(117, 117, 117, 1);
 }
 .form-field-comment textarea:hover,
-.form-field-comment textarea:active {
+.form-field-comment textarea:focus {
     cursor: pointer;
-    border: 1px solid rgba(33, 150, 243, 1);
+    border-color: rgba(33, 150, 243, 1);
+    outline: none;
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
