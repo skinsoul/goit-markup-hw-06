@@ -860,6 +860,29 @@ img {
     text-align: center;
     color: rgba(117, 117, 117, 1);
 }
+.icon-check {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--background-color);    
+    border-radius: 2px;
+    outline: none;
+}
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.checkbox:checked + .icon-check {
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
+    border-color: var(--accent-text-color);
+    background-image: url(../images/iconch.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
 .form-field-comment label {
     margin-bottom: 4px;
 }
