@@ -190,6 +190,7 @@ img {
 .footer-social {
     justify-content: center;
     align-items: center;
+    padding-right: 93px;
 }
 .footer-text {
     margin-bottom: 20px;
@@ -818,7 +819,8 @@ img {
     margin: 0;
     padding: 11px 42px;
     border-radius: 4px;
-    border: 1px solid rgba(117, 117, 117, 1);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    height: 40px;
 }
 .form-field input:hover,
 .form-field input:focus
@@ -841,7 +843,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.01em;
     text-align: left;
-    color: rgba(117, 117, 117, 1);
+    color: rgba(75, 75, 75, 0.5);
 }
 .form-field-comment textarea:hover,
 .form-field-comment textarea:focus {
@@ -858,7 +860,7 @@ img {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: center;
-    color: rgba(117, 117, 117, 1);
+    color: var(--secondary-text-color);
 }
 .icon-check {
     display: inline-block;
@@ -880,6 +882,7 @@ img {
     border-color: var(--accent-text-color);
     background-image: url(../images/iconch.svg);
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     background-origin: border-box;
 }
@@ -892,6 +895,8 @@ img {
     padding: 12px 16px;
     height: 120px;
     border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    resize: none;
 }
 .form-field-comment textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
