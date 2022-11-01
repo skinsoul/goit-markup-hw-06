@@ -762,7 +762,7 @@ img {
     top: 5.5px;
     right: 5.5px;
 }
-.backdrop-but svg:hover {
+.backdrop-but:hover {
     fill: var(--accent-text-color);
     cursor: pointer;
 }
@@ -807,7 +807,8 @@ img {
     top: 28px;
     left: 12px;
 }
-.form-svg:hover {
+.form-svg:hover,
+.form-field:hover {
     fill: rgba(33, 150, 243, 1);
 }
 .form-field label {
