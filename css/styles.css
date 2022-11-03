@@ -133,6 +133,9 @@ img {
     padding: 60px 0;
     background-color: var(--background-color);
 }
+.footer-info {
+    margin-right: 94px;
+}
 .logo-footer {
     display: block;
     color: var(--title-text-color);
@@ -185,7 +188,6 @@ img {
 .footer-main-cont {
     display: flex;
     align-items: baseline;
-    gap: 70px;
 }
 .footer-social {
     justify-content: center;
@@ -733,16 +735,18 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2)
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
-    visibility: hidden;
+    /* visibility: hidden; */
     opacity: 0;
     pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.8);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%) scale(1.8);
+    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .backdrop-but {
     display: flex;
